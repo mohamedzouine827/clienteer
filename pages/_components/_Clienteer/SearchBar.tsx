@@ -11,7 +11,7 @@ export default function SearchBar() {
   return (
     <section className={poppins.className} >
         <div className='w-full py-24 px-[120px] 2xl:px-[304px] '>
-            <div className='flex-col justify-start items-start gap-12 inline-flex'>
+            <div className='flex-col justify-start items-start gap-8 inline-flex'>
             <h1 className='font-bold text-zinc-950 text-[32px]'>
             Explore Briefs
             </h1>
