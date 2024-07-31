@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC } from "react";
 
 interface IndexProps {}
@@ -14,9 +15,11 @@ const HeroSection: FC<IndexProps> = () => {
         </div>
       </div>
       <div className="flex flex-row justify-center items-center gap-4 ">
-        <button className="w-[140px] sm:w-[163px] px-6 py-3 bg-amber-600 rounded-lg text-neutral-50 text-base  sm:text-lg font-medium">
+        <Link href="/Clienteer">
+        <button className="w-[140px] hover:bg-[#92400e] hover:text-[#fef3c7] sm:w-[163px] transition-all duration-150 ease-in-out px-6 py-3 bg-amber-600 rounded-lg text-neutral-50 text-base  sm:text-lg font-medium">
           Get Started
         </button>
+        </Link>
         <button className="w-[140px] sm:w-[163px] px-6 py-3 rounded-lg border border-zinc-600 text-[#0b090a]  text-base sm:text-lg font-medium">
           Socials
         </button>

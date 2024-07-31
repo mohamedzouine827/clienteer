@@ -15,7 +15,7 @@ const poppins = Poppins({
 export default function Home() {
   return (
     <section className={poppins.className}>
-      <div className="flex justify-center overflow-hidden">
+      <div className="flex justify-center items-center overflow-hidden">
         <Navbar />
 
       </div>
