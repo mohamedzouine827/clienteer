@@ -23,7 +23,7 @@ export default function Home() {
       <HeroSection />
       <WhatSection/>
       <HowTo/>
-      <Footer/>
+      <Footer bg=""/>
       </div>
     </section>
   );
