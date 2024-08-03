@@ -60,13 +60,13 @@ const Category: React.FC = () => {
             </div>
             <div className='flex flex-row gap-4'>
                 {designs.map((design) => (
-                    <div
+                    <button
                         key={design.id}
                         className={`h-14 px-8 py-4 w-48 rounded-2xl border justify-center items-center flex text-base font-normal cursor-pointer transition-colors duration-300 ${isRotated ? 'visible' : 'hidden invisible'} ${design.clicked ? 'bg-[#FBBF24] text-zinc-700' : 'border-zinc-400'}`}
                         onClick={() => handleDesignClick(design.id)}
                     >
                         {design.type}
-                    </div>
+                    </button>
                 ))}
             </div>
         </div>
