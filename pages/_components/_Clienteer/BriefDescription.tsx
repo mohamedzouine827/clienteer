@@ -1,7 +1,14 @@
 import React from 'react'
 import BackIcon from '../Assets/BackIcon'
+import {db} from "@/db/db"
+import { DesignType, DesignId } from '@/db/schema'
 
-export default function BriefDescription() {
+export default  function BriefDescription() {
+
+
+
+
+
     return (
         <div><div className="w-[1440px] h-[1891px] px-[120px] py-24 flex-col justify-start items-start gap-12 inline-flex">
             <div className="h-12 flex-col justify-start items-start gap-8 flex">

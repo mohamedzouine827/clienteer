@@ -3,6 +3,7 @@ import React from 'react'
 import Category from './Category';
 import BriefBlock from './BriefBlock';
 import Footer from '../Footer';
+import Link from 'next/link';
 const poppins = Poppins({
     subsets: ["latin"],
     weight: ["100", "200", "400", "300", "600", "500", "700", "800", "900"], // Specify the weights you want to use
@@ -22,20 +23,12 @@ export default function SearchBar() {
             </div>
             <div className='flex flex-col gap-16'>
             <div className='flex flex-row  gap-8 '>
+              <Link href="/Clienteer/ux/1">
             <BriefBlock />
-            <BriefBlock />
-            <BriefBlock />
+            </Link>
+
             </div>
-            <div className='flex flex-row  gap-8 '>
-            <BriefBlock />
-            <BriefBlock />
-            <BriefBlock />
-            </div>
-            <div className='flex flex-row  gap-8 '>
-            <BriefBlock />
-            <BriefBlock />
-            <BriefBlock />
-            </div>
+
             </div>
             
             

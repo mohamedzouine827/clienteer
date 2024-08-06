@@ -1,0 +1,110 @@
+{
+  "id": "ab2f551c-77eb-45bc-8940-6bbf24a9895d",
+  "prevId": "228f7e06-b9de-42f8-9639-dafb08cc04cc",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.DesignArticle": {
+      "name": "DesignArticle",
+      "schema": "",
+      "columns": {
+        "DesignId": {
+          "name": "DesignId",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "DesignType": {
+          "name": "DesignType",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Name": {
+          "name": "Name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Description": {
+          "name": "Description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Overview": {
+          "name": "Overview",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Objectives": {
+          "name": "Objectives",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Budget": {
+          "name": "Budget",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Audience": {
+          "name": "Audience",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Key": {
+          "name": "Key",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Timeline": {
+          "name": "Timeline",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "DesignArticle_DesignId_unique": {
+          "name": "DesignArticle_DesignId_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "DesignId"
+          ]
+        }
+      }
+    },
+    "public.DesignType": {
+      "name": "DesignType",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
