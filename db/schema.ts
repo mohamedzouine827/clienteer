@@ -9,7 +9,7 @@ export const DesignType = pgTable("DesignType", {
 
 export const DesignId = pgTable("DesignArticle", {
     DesignId: serial("DesignId").primaryKey().unique(),
-    DesignTypeID: integer("DesignType").notNull(),
+    DesignTypeID: text("DesignType").notNull(),
     User: text("Name").notNull(),
     Description: text("Description").notNull(),
     Overview: text("Overview").notNull(),
