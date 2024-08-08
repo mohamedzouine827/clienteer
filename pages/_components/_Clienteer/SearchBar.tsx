@@ -39,11 +39,11 @@ export default function SearchBar() {
   const DeisgnType = [
     {
       id : 1,
-      key : "UX",
+      key : "ui",
     },
     {
       id : 2,
-      key : "UI"
+      key : "ux"
     },
     {
       id : 3,
@@ -87,8 +87,10 @@ export default function SearchBar() {
               
             {
               designs.map((item) => (
+                <Link key={item.DesignId} href={`/Clienteer/${DeisgnType[item.DesignTypeID].key}/${item.DesignId}`}>
                 <BriefBlock key={item.DesignId} Description={item.Description} Name={item.User} DesignTypeId={DeisgnType[item.DesignTypeID].key} />
-              ))
+              
+                </Link>))
             }
 
 
